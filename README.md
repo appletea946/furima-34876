@@ -20,7 +20,7 @@
 - has_many :items
 - has_many :orders
 
-# items
+## items
 
 | Column           | Type          | Option                         |
 | ---------------- | ------------- | ------------------------------ |
@@ -39,7 +39,7 @@
 - belongs_to :user
 - has_one :order
 
-# orders
+## orders
 
 | Column           | Type       | Option                         |
 | ---------------- | ---------- | ------------------------------ |
@@ -47,12 +47,6 @@
 | expiration_month | integer    | null: false                    |
 | expiration_year  | integer    | null: false                    |
 | cvc              | integer    | null: false                    |
-| postal_code      | string     | null: false                    |
-| prefectures      | string     | null: false                    |
-| municipality     | string     | null: false                    |
-| address          | string     | null: false                    |
-| building_name    | string     |                                |
-| phone_number     | string     | null: false                    |
 | user             | references | null: false, foreign_key: true |
 | item             | references | null: false, foreign_key: true |
 
@@ -60,3 +54,20 @@
 
 - belongs_to :user
 - belongs_to :item
+- has_one :address
+
+## addresses
+
+| Column        | Type       | Option                         |
+| ------------- | ---------- | ------------------------------ |
+| postal_code   | string     | null: false                    |
+| prefectures   | string     | null: false                    |
+| municipality  | string     | null: false                    |
+| address       | string     | null: false                    |
+| building_name | string     |                                |
+| phone_number  | string     | null: false                    |
+| order         | references | null: false, foreign_key: true |
+
+### association
+
+- belongs_to :order
