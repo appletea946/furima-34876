@@ -20,17 +20,17 @@
 
 ## items
 
-| Column           | Type          | Option                         |
-| ---------------- | ------------- | ------------------------------ |
-| name             | varchar(40)   | null: false                    |
-| description      | varchar(1000) | null: false                    |
-| category         | string        | null: false                    |
-| status           | string        | null: false                    |
-| shipping_charges | string        | null: false                    |
-| shipping_area    | string        | null: false                    |
-| days_to_ship     | string        | null: false                    |
-| price            | integer       | null: false                    |
-| user             | references    | null: false, foreign_key: true |
+| Column           | Type       | Option                         |
+| ---------------- | ---------- | ------------------------------ |
+| name             | string     | null: false                    |
+| description      | string     | null: false                    |
+| category         | string     | null: false                    |
+| status           | string     | null: false                    |
+| shipping_charges | string     | null: false                    |
+| shipping_area    | string     | null: false                    |
+| days_to_ship     | string     | null: false                    |
+| price            | integer    | null: false                    |
+| user             | references | null: false, foreign_key: true |
 
 ### association
 
