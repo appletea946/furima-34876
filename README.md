@@ -2,18 +2,16 @@
 
 ## users
 
-| Column              | Type    | Option                    |
-| ------------------- | ------- | ------------------------- |
-| nickname            | string  | null: false               |
-| email               | string  | null: false, unique: true |
-| encrypted_password  | string  | null: false               |
-| last_name_kanji     | string  | null: false               |
-| first_name_kanji    | string  | null: false               |
-| last_name_katakana  | string  | null: false               |
-| first_name_katakana | string  | null: false               |
-| birth_year          | integer | null: false               |
-| birth_month         | integer | null: false               |
-| birth_day           | integer | null: false               |
+| Column              | Type   | Option                    |
+| ------------------- | ------ | ------------------------- |
+| nickname            | string | null: false               |
+| email               | string | null: false, unique: true |
+| encrypted_password  | string | null: false               |
+| last_name_kanji     | string | null: false               |
+| first_name_kanji    | string | null: false               |
+| last_name_katakana  | string | null: false               |
+| first_name_katakana | string | null: false               |
+| birthday            | date   | null: false               |
 
 ### association
 
