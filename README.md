@@ -41,10 +41,6 @@
 
 | Column           | Type       | Option                         |
 | ---------------- | ---------- | ------------------------------ |
-| card_number      | string     | null: false                    |
-| expiration_month | integer    | null: false                    |
-| expiration_year  | integer    | null: false                    |
-| cvc              | integer    | null: false                    |
 | user             | references | null: false, foreign_key: true |
 | item             | references | null: false, foreign_key: true |
 
