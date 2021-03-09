@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2021-03-09T10:00:13.777Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="5Zusqs86O7bJKP4spHgU" version="14.2.4" type="embed">
+<mxfile host="65bd71144e" modified="2021-03-09T10:06:42.890Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="KEWkiZ4NEZElX2OMenEg" version="14.2.4" type="embed">
     <diagram id="sl5BSPvHvkOXAtMsiaxR" name="ページ1">
-        <mxGraphModel dx="728" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+        <mxGraphModel dx="971" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -205,7 +205,7 @@
                 <mxCell id="65" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="60" vertex="1">
                     <mxGeometry y="310" width="370" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="66" value="shipping_area_id" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="65" vertex="1">
+                <mxCell id="66" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;_id&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="65" vertex="1">
                     <mxGeometry width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="67" value="integer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="65" vertex="1">
