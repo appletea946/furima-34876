@@ -59,13 +59,23 @@ RSpec.describe Item, type: :model do
           @item.valid?
           expect(@item.errors.full_messages).to include("Price can't be blank")
         end
-        it 'priceが文字列では出品できない' do
+        it 'priceが半角英数混合では出品できない' do
           @item.price = "abc123"
           @item.valid?
           expect(@item.errors.full_messages).to include("Price is not a number")
         end
+        it 'priceが半角英語だけでは出品できない' do
+          @item.price = "abc"
+          @item.valid?
+          expect(@item.errors.full_messages).to include("Price is not a number")
+        end
+        it 'priceが全角文字では出品できない' do
+          @item.price = "ａｂｃ"
+          @item.valid?
+          expect(@item.errors.full_messages).to include("Price is not a number")
+        end
         it 'priceが全角数字では出品できない' do
-        @item.price = '１０００'
+          @item.price = '１０００'
           @item.valid?
           expect(@item.errors.full_messages).to include("Price is not a number")
         end
