@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_03_10_115458) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name", null: false
-    t.string "description", null: false
+    t.text "description", null: false
     t.integer "category_id", null: false
     t.integer "status_id", null: false
     t.integer "shipping_charges_id", null: false
