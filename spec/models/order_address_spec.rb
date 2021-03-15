@@ -4,10 +4,19 @@ RSpec.describe OrderAddress, type: :model do
   describe '商品購入機能' do
     before do
       @order_address = FactoryBot.build(:order_address)
+      @user = FactoryBot.create(:user)
+      @item = FactoryBot.create(:item)
+      @order_address.user_id = @user.id
+      @order_address.item_id = @item.id
+      sleep 0.1
     end
 
     context '購入情報が保存できるとき' do
       it '情報が正しく入力されていれば保存できる' do
+        expect(@order_address).to be_valid
+      end
+      it '建物名が抜けていても保存できる' do
+        @order_address.building_name = ""
         expect(@order_address).to be_valid
       end
     end
@@ -64,6 +73,11 @@ RSpec.describe OrderAddress, type: :model do
       end
       it 'phone_numberは英数字混合では保存できない' do
         @order_address.phone_number = '123abcd4567'
+        @order_address.valid?
+        expect(@order_address.errors.full_messages).to include('Phone number Input only number')
+      end
+      it 'phone_numberは12桁以上では保存できない' do
+        @order_address.phone_number = '123456789010'
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include('Phone number Input only number')
       end
